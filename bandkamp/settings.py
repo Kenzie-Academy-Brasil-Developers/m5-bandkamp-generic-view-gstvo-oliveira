@@ -33,7 +33,7 @@ SECRET_KEY = os.getenv('SECRET_KEY', get_random_secret_key())
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['web-production-d93a.up.railway.app', '0.0.0.0']
+ALLOWED_HOSTS = ['bandkamp-generic-view-production-f8ea.up.railway.app', '0.0.0.0']
 
 
 # Application definition
@@ -102,7 +102,6 @@ DATABASES = {
       "NAME": os.getenv("POSTGRES_DB"),
       "USER": os.getenv("POSTGRES_USER"),
       "PASSWORD": os.getenv("POSTGRES_PASSWORD"),
-      "HOST": "127.0.0.1",
       "PORT": 5432,
   }
 }
